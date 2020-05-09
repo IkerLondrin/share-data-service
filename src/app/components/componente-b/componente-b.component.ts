@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShareDataService } from 'src/app/services/share-data/share-data.service';
 
 @Component({
   selector: 'app-componente-b',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponenteBComponent implements OnInit {
 
-  constructor() { }
+  mensajeRecibido: string;
+  constructor(
+    private shareDataService: ShareDataService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    // Nos suscribimos al mensaje que le ha llegado al servicio!
+    this.shareDataService.dataSubject.subscribe(msg => {
+      this.mensajeRecibido = msg
+    });
   }
 
 }
