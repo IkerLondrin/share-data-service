@@ -12,5 +12,4 @@ export class SidenavComponent {
   events: string[] = [];
   opened: boolean = true;
 
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
 }
