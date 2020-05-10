@@ -6,7 +6,9 @@
 }
 
 .mat-sidenav, .mat-sidenav-content {
-    padding: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 95vh;
 }
 
 .active-list-item {
@@ -17,7 +19,9 @@
 .sidenav-content {
     background-color: white !important
 }
-.sidenav-title {
-    background-color:#4a148c !important;
+
+.sidenav-toolbar {
+    background-color: #4a148c !important;
     color: white;
+    height: 5vh;
 }

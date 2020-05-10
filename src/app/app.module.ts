@@ -50,6 +50,7 @@ import { ToolbarComponent } from './components/shared/toolbar/toolbar.component'
 import { Componente1Component } from './components/desanidados/componente1/componente1.component';
 import { Componente2Component } from './components/desanidados/componente2/componente2.component';
 import { DesanidadosComponent } from './sections/desanidados/desanidados.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 
 
@@ -63,7 +64,8 @@ import { DesanidadosComponent } from './sections/desanidados/desanidados.compone
     ToolbarComponent,
     Componente1Component,
     Componente2Component,
-    DesanidadosComponent
+    DesanidadosComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

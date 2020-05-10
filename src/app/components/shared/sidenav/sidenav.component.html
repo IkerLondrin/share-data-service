@@ -1,4 +1,4 @@
-<mat-toolbar class="sidenav-title">
+<mat-toolbar class="sidenav-toolbar">
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
@@ -9,6 +9,7 @@
     <mat-sidenav mode="side" [(opened)]="opened">
         <mat-nav-list>
             <a mat-list-item routerLink='/padreHijo' routerLinkActive="active-list-item">Componente padre a hijo</a>
+            <a mat-list-item routerLink='/hijoPadre' routerLinkActive="active-list-item">Componente hijo a padre</a>
             <a mat-list-item routerLink='/desanidados' routerLinkActive="active-list-item">Componentes desanidados</a>
         </mat-nav-list>
     </mat-sidenav>
