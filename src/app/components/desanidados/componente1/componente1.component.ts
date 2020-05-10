@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { ShareDataService } from 'src/app/services/share-data/share-data.service';
 
-@Component({
-  selector: 'app-componente-a',
-  templateUrl: './componente-a.component.html',
-  styleUrls: ['./componente-a.component.css']
-})
-export class ComponenteAComponent implements OnInit {
 
-  mensajeEnviar: string;
+@Component({
+  selector: 'app-componente1',
+  templateUrl: './componente1.component.html',
+  styleUrls: ['./componente1.component.css']
+})
+export class Componente1Component implements OnInit {
+
+  mensajeEnviar: string = '';
 
   constructor(
     private shareDataService: ShareDataService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   sendInfoToB() {

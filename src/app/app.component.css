@@ -1,0 +1,4 @@
+md-sidenav { 
+    position:fixed;
+    height: 100% !important }
+md-backdrop.md-opaque { position:fixed }
